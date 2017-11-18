@@ -1,0 +1,17 @@
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+common/CMakeFiles/
+common/Makefile
+examples/CMakeCache.txt
+examples/CMakeFiles/
+examples/Makefile
+examples/cmake_install.cmake
+out/
+test/CMakeFiles/
+test/Makefile
+test/cmake_install.cmake
+unix/CMakeFiles/
+unix/Makefile
+unix/cmake_install.cmake

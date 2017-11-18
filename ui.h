@@ -143,6 +143,7 @@ typedef struct uiEntry uiEntry;
 _UI_EXTERN char *uiEntryText(uiEntry *e);
 _UI_EXTERN void uiEntrySetText(uiEntry *e, const char *text);
 _UI_EXTERN void uiEntryOnChanged(uiEntry *e, void (*f)(uiEntry *e, void *data), void *data);
+_UI_EXTERN void uiEntryOnEnter(uiEntry *e, void (*f)(uiEntry *e, void *data), void *data);
 _UI_EXTERN int uiEntryReadOnly(uiEntry *e);
 _UI_EXTERN void uiEntrySetReadOnly(uiEntry *e, int readonly);
 _UI_EXTERN uiEntry *uiNewEntry(void);
@@ -309,6 +310,7 @@ _UI_ENUM(uiWindowResizeEdge) {
 // TODO give a better name
 // TODO document the types of width and height
 _UI_EXTERN void uiAreaSetSize(uiArea *a, int width, int height);
+_UI_EXTERN void uiAreaGetScrollSize(uiArea *a, int* width, int* height);
 // TODO uiAreaQueueRedraw()
 _UI_EXTERN void uiAreaQueueRedrawAll(uiArea *a);
 _UI_EXTERN void uiAreaScrollTo(uiArea *a, double x, double y, double width, double height);

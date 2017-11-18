@@ -492,6 +492,12 @@ static void areaWidget_class_init(areaWidgetClass *class)
 
 uiUnixControlAllDefaults(uiArea)
 
+void uiAreaGetScrollSize(uiArea *a, int* width, int* height)
+{
+	*width = a->scrollWidth;
+	*height = a->scrollHeight;
+}
+
 void uiAreaSetSize(uiArea *a, int width, int height)
 {
 	if (!a->scrolling)
